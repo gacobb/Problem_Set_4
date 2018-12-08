@@ -1,0 +1,23 @@
+This is how I would normalize the Green Growth data.
+
+This data table has a LOT of information in it. So I would break it down into smaller tables that can be joined to make data analysis a little bit easier.
+
+1) There are redundant columns within the data (i.e. YEA/Year, Unit Code/Unit). I would remove the duplicate columns.
+2) If would remove the index rows from the data. These are useful for graphing data but may not answer the questions I have specifically.
+3) I will combine the information in the country_code and year column into one column labeled Country_by_Year
+
+I want to answer questions about the relationship between GDP and green growth indicators.
+This really does not require multiple tables and thus would not require a foreign key. The tricky part here will be sorting the original table in such a way as to enter the correct information into the table.
+
+Table #1: Green_growth
+Country_by_year, primary key
+Country
+Real GDP per capita
+GDP per Unit of energy-related CO2 emissions
+Environmentally related taxes (% of total tax revenue)
+Environmentally related government R&D budget (% of total government R&D)
+Renewable energy supply (% of TPES)
+Development of environment-related technologies (% of all technologies)
+Environmentally related Official Develop Assistance (% of total ODA)
+ODA - climate change mitigation (% of total ODA)
+ODA - biodiversity (% of total ODA)
