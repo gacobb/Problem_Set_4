@@ -10,14 +10,14 @@ I want to answer questions about the relationship between GDP and green growth i
 This really does not require multiple tables and thus would not require a foreign key. The tricky part here will be sorting the original table in such a way as to enter the correct information into the table.
 
 Table #1: Green_growth
-Country_by_year, primary key
-Country
-Real GDP per capita
-GDP per Unit of energy-related CO2 emissions
-Environmentally related taxes (% of total tax revenue)
-Environmentally related government R&D budget (% of total government R&D)
-Renewable energy supply (% of TPES)
-Development of environment-related technologies (% of all technologies)
-Environmentally related Official Develop Assistance (% of total ODA)
-ODA - climate change mitigation (% of total ODA)
-ODA - biodiversity (% of total ODA)
+Country_by_year, string, primary key
+Country, string
+Real GDP per capita, float
+GDP per Unit of energy-related CO2 emissions, float
+Environmentally related taxes (% of total tax revenue), float
+Environmentally related government R&D budget (% of total government R&D), float
+Renewable energy supply (% of TPES), float
+Development of environment-related technologies (% of all technologies), float
+Environmentally related Official Develop Assistance (% of total ODA), float
+ODA - climate change mitigation (% of total ODA), float
+ODA - biodiversity (% of total ODA), float
